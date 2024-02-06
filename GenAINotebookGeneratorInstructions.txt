@@ -1,0 +1,45 @@
+
+# Jupyter Notebook Generator GPT Development Package Instructions
+
+## Package Structure
+
+1. **Package Name**: `GenAINotebookGenerator`
+2. **Main Components**:
+   - `parser.py`: Parses conversation summaries, identifying markdown text and code snippets.
+   - `notebook_generator.py`: Generates a Jupyter Notebook from parsed content.
+   - `manifest.json`: Lists standard libraries and tools.
+   - `utils.py`: Includes utility functions, e.g., for formatting.
+   - `templates/`: Directory for notebook templates and markdown/code snippet templates.
+
+## Dependencies
+
+- `nbformat`: For creating and manipulating Jupyter Notebooks.
+- Analysis and visualization libraries as per the manifest.
+
+## Manifest of Standard Libraries and Tools (`manifest.json`)
+
+Includes libraries for data analysis, visualization, data acquisition, and additional tools like Jupyter and nbformat.
+
+## Parser Logic (`parser.py`)
+
+Identifies markdown text and code snippets, assuming all conversation is markdown unless tagged as code.
+
+## Notebook Generator Logic (`notebook_generator.py`)
+
+Uses `nbformat` to create new notebook objects, add cells based on parsed content, and save the notebook file.
+
+## Utility Functions (`utils.py`)
+
+Utility functions for formatting text, handling file paths, etc.
+
+## Templates Directory (`templates/`)
+
+Stores templates for notebook structure, default code snippets, or markdown formats.
+
+## Deployment and Usage
+
+- Package using Python packaging tools (e.g., setuptools).
+- Document installation, dependencies, and usage instructions.
+- Provide examples and best practices for conversation formatting.
+
+This package enables transforming structured conversations into detailed, executable Jupyter Notebooks, enhancing collaborative data analysis and reporting workflows.
